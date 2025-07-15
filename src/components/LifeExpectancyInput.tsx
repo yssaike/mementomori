@@ -11,10 +11,10 @@ export const LifeExpectancyInput: React.FC<LifeExpectancyInputProps> = ({
   onLifeExpectancyChange
 }) => {
   return (
-    <div className="bg-gray-50 rounded-xl p-6 border border-gray-200 shadow-sm">
+    <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700 shadow-lg">
       <div className="flex items-center gap-3 mb-4">
-        <Target className="w-6 h-6 text-black" />
-        <h2 className="text-xl font-semibold text-black">Life Expectancy</h2>
+        <Target className="w-5 h-5 text-gray-300" />
+        <h2 className="text-lg font-medium text-white">Life Expectancy</h2>
       </div>
       
       <div className="flex items-center gap-4">
@@ -24,9 +24,9 @@ export const LifeExpectancyInput: React.FC<LifeExpectancyInputProps> = ({
           max="120"
           value={lifeExpectancy}
           onChange={(e) => onLifeExpectancyChange(Number(e.target.value))}
-          className="bg-white border border-gray-300 rounded-lg px-4 py-3 text-black text-lg font-medium focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent transition-all w-24"
+          className="bg-gray-900/80 border border-gray-600 rounded-lg px-4 py-3 text-white text-lg font-medium focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all w-24"
         />
-        <span className="text-gray-600 text-lg">years</span>
+        <span className="text-gray-400 text-lg font-light">years</span>
       </div>
     </div>
   );

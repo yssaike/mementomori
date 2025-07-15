@@ -48,13 +48,13 @@ export const LifeMetricsDisplay: React.FC<LifeMetricsDisplayProps> = ({ metrics 
         return (
           <div
             key={index}
-            className="bg-gray-50 rounded-xl p-6 border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:scale-105 shadow-sm"
+            className="bg-gray-800/40 backdrop-blur-sm rounded-xl p-6 border border-gray-700 hover:border-gray-600 transition-all duration-300 hover:scale-105 shadow-lg"
           >
             <div className="flex items-center gap-3 mb-3">
-              <IconComponent className="w-6 h-6 text-black" />
-              <h3 className="text-gray-600 font-medium">{item.label}</h3>
+              <IconComponent className="w-5 h-5 text-gray-300" />
+              <h3 className="text-gray-400 font-medium">{item.label}</h3>
             </div>
-            <p className="text-2xl font-bold text-black">{item.value}</p>
+            <p className="text-2xl font-semibold text-white">{item.value}</p>
           </div>
         );
       })}
